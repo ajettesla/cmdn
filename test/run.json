@@ -1,0 +1,27 @@
+{
+  "monitor_version": "3.0",
+  "os": "Linux",
+  "os_release": "7.0.0-44-generic",
+  "machine": "x86_64",
+  "logical_cpu_count": 12,
+  "total_memory_bytes": 32799678464,
+  "search_terms": {
+    "p1": "chrome",
+    "p2": "firefox"
+  },
+  "matching": "decimal search terms select one exact PID; other terms match case-insensitive substrings in process name or executable basename",
+  "process_scope": "all accessible matching processes; process list is refreshed each sample",
+  "sample_interval_seconds": 0.25,
+  "memory_detail_interval_seconds": 5.0,
+  "disk_scope": "whole machine; process I/O counters are separate",
+  "network_scope": "whole machine across interfaces; not attributed to either process group",
+  "sampling_model": "CPU and I/O rates cover time since prior poll; memory is read at poll; target processes are not paused",
+  "probe_urls": {
+    "p1": null,
+    "p2": null
+  },
+  "probe_interval_seconds": 1.0,
+  "probe_timeout_seconds": 3.0,
+  "lag_threshold_ms": 1000.0,
+  "csv_file": "test/process_comparison.csv"
+}
